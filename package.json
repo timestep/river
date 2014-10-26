@@ -5,7 +5,7 @@
   "main": "app/index.html",
   "window": {
     "title": "diskDB App",
-    "toolbar": true,
+    "toolbar": false,
     "resizable": false,
     "width": 800,
     "height": 500,
@@ -29,6 +29,5 @@
   },
   "dependencies": {
     "torrent-stream": "~0.15.1",
-    "underscore": "~1.7.0"
   }
 }

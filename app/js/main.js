@@ -2,7 +2,6 @@ var torrentStream = require('torrent-stream');
 var gui = require('nw.gui');
 var win = gui.Window.get();
 var http = require('http');
-var _ = require('underscore');
 // gui.App.setCrashDumpDir('')
 
 var mediaExtensions = [
