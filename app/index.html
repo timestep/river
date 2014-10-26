@@ -10,8 +10,20 @@
 <body>
   <h1>This is the River App</h1>
   <h2>It is a GUI for PeerFlix</h2>
-  magnetLink: <input type="text" id='magnetLink'>
-  <button id='getLink'>Start Engine</button>
+  <div id="link">  
+    magnetLink: <input type="text" id='magnetLink'> 
+    <button id='getLink'>Start Engine</button>
+  </div>
+  <div id='description'>
+    Start VLC
+    <ul>
+      <li>Open http://localhost:1337</li>
+    </ul>
+    This will contain your file stream.
+  </div>
+  <div id="itemDescirption">
+    Click the media file you wish to stream:
+  </div>
   <ul id='files'></ul>
 </body>
 </html>
