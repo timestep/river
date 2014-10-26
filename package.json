@@ -1,0 +1,33 @@
+{
+  "name": "river",
+  "version": "0.0.0",
+  "description": "PeerFlix-GUI",
+  "main": "app/index.html",
+  "window": {
+    "title": "diskDB App",
+    "toolbar": true,
+    "resizable": false,
+    "width": 800,
+    "height": 500,
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600,
+    "position": "mouse"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timestep/river"
+  },
+  "author": "Kevin Sivabalan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timestep/river/issues"
+  },
+  "dependencies": {
+    "torrent-stream": "~0.15.1"
+  }
+}
