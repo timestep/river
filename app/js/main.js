@@ -6,12 +6,8 @@ var http = require('http');
 var init = function () {
   var getLink = document.getElementById('getLink');
   getLink.onclick = function (argument) {
-    getMagnet;
+    getMagnet();
   }
-}
-
-var destroyAllData = function () {
-  
 }
 
 var getMagnet = function () {
@@ -65,4 +61,3 @@ document.onreadystatechange = (function () {
     init();
   }
 })
-
