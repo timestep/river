@@ -10,6 +10,8 @@ Inspired by peerflix; I wrote this in as primarily an learning exersise in node 
 
 TODO:
 
+Priority: Figure out how to build.
+
 1. Visual Overhaul
 2. Support Torrent Files
 3. Remove Node Server Streaming. (or leave it...for streaming to other applications?)
