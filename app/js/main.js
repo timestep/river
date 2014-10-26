@@ -3,6 +3,8 @@ var gui = require('nw.gui');
 var win = gui.Window.get();
 var http = require('http');
 
+// gui.App.setCrashDumpDir('')
+
 var init = function () {
   var getLink = document.getElementById('getLink');
   getLink.onclick = function (argument) {
@@ -44,13 +46,16 @@ var startEngine = function (engine) {
       // stream is readable stream to containing the file content
     });
   });
-
-
 }
 
 var startStream = function (file) {
-  var stream = file.createReadStream();
-  console.log(stream);
+
+  http.createServer(function (req,res) {
+    var stream = file.createReadStream();
+    stream.pipe(res);
+  }).listen(1337);
+
+
 }
 
 document.onreadystatechange = (function () {
