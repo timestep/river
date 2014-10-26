@@ -28,6 +28,6 @@
     "url": "https://github.com/timestep/river/issues"
   },
   "dependencies": {
-    "torrent-stream": "~0.15.1",
+    "torrent-stream": "~0.15.1"
   }
 }
