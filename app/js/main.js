@@ -32,23 +32,20 @@ var startEngine = function (engine) {
       newFile.appendChild(document.createTextNode(file.name))
       newFile.setAttribute("id",count+"-file-"+file.name);
       newFile.setAttribute("class","file_link");
+      newFile.file = file;
       items.appendChild(newFile);
       ++count;
 
       newFile.onclick = function () {
-        startStream(this);
+        debugger;
+        startStream(this.file);
       }
       // var stream = file.createReadStream();
       // stream is readable stream to containing the file content
     });
   });
 
-  win.on('close',function () {
-    this.hide();
-    engine.destroy(function(){
-      this.close(true);
-    });
-  })
+
 }
 
 var startStream = function (file) {
@@ -59,5 +56,11 @@ var startStream = function (file) {
 document.onreadystatechange = (function () {
   if(document.readyState == "complete"){
     init();
+
+    win.on('close',function () {
+      this.hide();
+      this.close(true);
+    });
+
   }
 })

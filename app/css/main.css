@@ -1,5 +1,6 @@
 .file_link{
   color: blue;
+  cursor: pointer;
 }
 .file_link:hover{
   color: green;
