@@ -1,6 +1,8 @@
 river
 =====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/timestep/river.svg)](https://greenkeeper.io/)
+
 PeerFlix-GUI
 
 
